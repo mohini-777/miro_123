@@ -30,7 +30,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>MirojJewellers</title>
     <script>
-        // Add custom Tailwind configuration
         tailwind.config = {
             theme: {
                 extend: {
@@ -53,11 +52,7 @@
                     center: true,
                     padding: '0.75rem',
                     screens: {
-                        sm: '600px',
-                        md: '728px',
-                        lg: '984px',
-                        xl: '1240px',
-                        '2xl': '1326px',
+                        '2xl': '1180px',
                     },
                 },
             },
@@ -66,168 +61,189 @@
 </head>
 
 <body>
-<!--------- navbar-section ---------->
-  <nav>
-    <div
-      class="flex justify-between items-center relative max-xl:pt-3 max-lg:py-3">
-      <div class="max-w-[1420px] px-3 sm:px-8 mx-auto flex justify-between items-center w-full">
-        <div class="min-[1200px]:hidden relative cursor-pointer" id="openMenu">
-          <img width="100" height="100" src="//mirojewelers.com/cdn/shop/files/menu-icon-dark.svg?v=8955160635054135691" alt="menu-icon"
-            class="object-contain w-full h-full max-w-[40px]" height="100" width="100">
+    <!--------- navbar-section ---------->
+    <nav class="sticky z-50 top-0 bg-white">
+        <div
+            class="bg-[#f3013e] py-1 sm:py-2 md:py-3 text-white text-center font-lato text-xs uppercase flex flex-col sm:flex-row justify-center">
+            <b>
+                🎄 Christmas Sparkle: Up to 10% OFF! </b>
+            <b>
+                use coupon code: <span class="bg-white text-[#f3013e] px-1 rounded-sm">CHRISTMAS</span> ✨
+            </b>
+            <b>
+                <a href="" class="underline">Shop Now!</a> 🎁
+            </b>
         </div>
-        <ul class="hidden min-[1200px]:flex items-center gap-x-3 sm:gap-x-10">
-          <li class="hidden min-[1200px]:block">
-            <form class="searchbar cursor-pointer">
-              <div class="flex items-center flex-col">      
-                    <img width="100" height="100" src="//mirojewelers.com/cdn/shop/files/search-icon.svg?v=4830619908075847764" alt="search-icon"
-                      class="w-5 h-5 object-contain">
-                  </label>
-              </div>
-            </form>
-          </li>
-          <li class="hidden min-[1200px]:block">
-            <a href="#" class="flex items-center gap-2 group">
-              <img src="//mirojewelers.com/cdn/shop/files/menu-location.svg?v=518855454293420548" alt="location-icon"
-                class="w-5 h-5 object-contain group-hover:translate-y-[-6px] duration-300">
-              <span class=" font-lato text-xs md:text-sm font-normal text-black capitalize">visit us</span>
-            </a>
-          </li>
-          <li class="hidden min-[1200px]:block">
-            <a href="tel:303-393-8881" class="flex items-center gap-2 group">
-              <img src="//mirojewelers.com/cdn/shop/files/telephone.svg?v=7048219849590973830" alt="tele"
-                class="w-5 h-5 group-hover:translate-y-[-6px] duration-300">
-              <span class=" font-lato text-xs md:text-sm font-normal text-black">303-393-8881</span>
-            </a>
-          </li>
-        </ul>
-        <a href="#">
-          <img  src="//mirojewelers.com/cdn/shop/files/logo.svg?v=18083215567408026205" alt="logo"
-            class=" max-[310px]:w-[70px] w-[90px] sm:w-[120px] lg:w-[160px] hover:scale-[0.95] duration-300">
-        </a>
-        <ul class="flex items-center gap-x-3 sm:gap-x-6">
-          <li class="hidden min-[1200px]:block">
-            <a href="" class="flex items-center gap-2 group">
-              <img width="100" height="100" src="//mirojewelers.com/cdn/shop/files/book-an-app.svg?v=7714488975366462653" alt="wishlist-icon"
-                class="w-6 h-6 object-contain group-hover:translate-y-[-6px] duration-300">
-              <span class=" font-lato text-xs md:text-sm font-normal text-black hidden xl:block capitalize">Book an
-                Appointment</span>
-            </a>
-          </li>
-          <li>          
-              <img width="100" height="100" src="//mirojewelers.com/cdn/shop/files/user-regular.svg?v=12817365345112002762" alt="profile-icon"
-                class="w-5 h-5 object-contain hover:translate-y-[-6px] duration-300 cursor-pointer">
-          </li>
-          <li class="hidden xl:block">
-            <a href="">
-              <img width="100" height="100" src="//mirojewelers.com/cdn/shop/files/menu-wishlist.svg?v=9989802831291200060" alt="wishlist-icon-on-menu"
-                class="w-5 h-5 object-contain hover:translate-y-[-6px] duration-300">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="group">
-              <svg class="w-5 h-5 mt-1 xl:mt-0 group-hover:translate-y-[-6px] duration-300" width="21" height="21" viewBox="0 0 21 21"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2 14V2H0V0H3C3.26522 0 3.51957 0.105357 3.70711 0.292893C3.89464 0.48043 4 0.734784 4 1V13H16.438L18.438 5H6V3H19.72C19.872 3 20.022 3.03466 20.1586 3.10134C20.2952 3.16801 20.4148 3.26495 20.5083 3.38479C20.6019 3.50462 20.6668 3.6442 20.6983 3.79291C20.7298 3.94162 20.7269 4.09555 20.69 4.243L18.19 14.243C18.1358 14.4592 18.011 14.6512 17.8352 14.7883C17.6595 14.9255 17.4429 15 17.22 15H2.999C2.73378 15 2.47943 14.8946 2.29189 14.7071C2.10436 14.5196 2 14.2652 2 14ZM3.999 21C3.46857 21 2.95986 20.7893 2.58479 20.4142C2.20971 20.0391 1.999 19.5304 1.999 19C1.999 18.4696 2.20971 17.9609 2.58479 17.5858C2.95986 17.2107 3.46857 17 3.999 17C4.52943 17 5.03814 17.2107 5.41321 17.5858C5.78829 17.9609 5.999 18.4696 5.999 19C5.999 19.5304 5.78829 20.0391 5.41321 20.4142C5.03814 20.7893 4.52943 21 3.999 21ZM15.999 21C15.4686 21 14.9599 20.7893 14.5848 20.4142C14.2097 20.0391 13.999 19.5304 13.999 19C13.999 18.4696 14.2097 17.9609 14.5848 17.5858C14.9599 17.2107 15.4686 17 15.999 17C16.5294 17 17.0381 17.2107 17.4132 17.5858C17.7883 17.9609 17.999 18.4696 17.999 19C17.999 19.5304 17.7883 20.0391 17.4132 20.4142C17.0381 20.7893 16.5294 21 15.999 21Z"
-                  fill="black" />
-              </svg>
-  
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <form
-      class="input-group search-bar min-[1200px]:hidden relative px-3 bg-white border-b-[1px] border-gray-100" role="search">
-      <div class="flex items-center">
-        <input required type="search" value="" placeholder="Search Your Type" class="
+        <div class="flex justify-between items-center relative max-xl:pt-3 max-lg:py-3">
+            <div class="max-w-[1280px] px-3 sm:px-8 mx-auto flex justify-between items-center w-full">
+                <div class="min-[1200px]:hidden relative cursor-pointer" id="openMenu">
+                    <img width="100" height="100"
+                        src="//mirojewelers.com/cdn/shop/files/menu-icon-dark.svg?v=8955160635054135691" alt="menu-icon"
+                        class="object-contain w-full h-full max-w-[40px]" height="100" width="100">
+                </div>
+                <ul class="hidden min-[1200px]:flex items-center gap-x-3 sm:gap-x-10">
+                    <li class="hidden min-[1200px]:block">
+                        <form class="searchbar cursor-pointer">
+                            <div class="flex items-center flex-col">
+                                <img width="100" height="100"
+                                    src="//mirojewelers.com/cdn/shop/files/search-icon.svg?v=4830619908075847764"
+                                    alt="search-icon" class="w-5 h-5 object-contain">
+                                </label>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="hidden min-[1200px]:block">
+                        <a href="#" class="flex items-center gap-2 group">
+                            <img src="//mirojewelers.com/cdn/shop/files/menu-location.svg?v=518855454293420548"
+                                alt="location-icon"
+                                class="w-5 h-5 object-contain group-hover:translate-y-[-6px] duration-300">
+                            <span class=" font-lato text-xs font-normal text-black capitalize">visit us</span>
+                        </a>
+                    </li>
+                    <li class="hidden min-[1200px]:block">
+                        <a href="tel:303-393-8881" class="flex items-center gap-2 group">
+                            <img src="//mirojewelers.com/cdn/shop/files/telephone.svg?v=7048219849590973830" alt="tele"
+                                class="w-5 h-5 group-hover:translate-y-[-6px] duration-300">
+                            <span class=" font-lato text-xs font-normal text-black">303-393-8881</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img src="//mirojewelers.com/cdn/shop/files/logo.svg?v=18083215567408026205" alt="logo"
+                        class=" max-[310px]:w-[70px] w-[90px] sm:w-[120px] lg:w-[140px] hover:scale-[0.95] duration-300">
+                </a>
+                <ul class="flex items-center gap-x-3 sm:gap-x-6">
+                    <li class="hidden min-[1200px]:block">
+                        <a href="" class="flex items-center gap-2 group">
+                            <img width="100" height="100"
+                                src="//mirojewelers.com/cdn/shop/files/book-an-app.svg?v=7714488975366462653"
+                                alt="wishlist-icon"
+                                class="w-6 h-6 object-contain group-hover:translate-y-[-6px] duration-300">
+                            <span class=" font-lato text-xs font-normal text-black hidden xl:block capitalize">Book an
+                                Appointment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <img width="100" height="100"
+                            src="//mirojewelers.com/cdn/shop/files/user-regular.svg?v=12817365345112002762"
+                            alt="profile-icon"
+                            class="w-5 h-5 object-contain hover:translate-y-[-6px] duration-300 cursor-pointer">
+                    </li>
+                    <li class="hidden xl:block">
+                        <a href="">
+                            <img width="100" height="100"
+                                src="//mirojewelers.com/cdn/shop/files/menu-wishlist.svg?v=9989802831291200060"
+                                alt="wishlist-icon-on-menu"
+                                class="w-5 h-5 object-contain hover:translate-y-[-6px] duration-300">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="group">
+                            <svg class="w-5 h-5 mt-1 xl:mt-0 group-hover:translate-y-[-6px] duration-300" width="21"
+                                height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 14V2H0V0H3C3.26522 0 3.51957 0.105357 3.70711 0.292893C3.89464 0.48043 4 0.734784 4 1V13H16.438L18.438 5H6V3H19.72C19.872 3 20.022 3.03466 20.1586 3.10134C20.2952 3.16801 20.4148 3.26495 20.5083 3.38479C20.6019 3.50462 20.6668 3.6442 20.6983 3.79291C20.7298 3.94162 20.7269 4.09555 20.69 4.243L18.19 14.243C18.1358 14.4592 18.011 14.6512 17.8352 14.7883C17.6595 14.9255 17.4429 15 17.22 15H2.999C2.73378 15 2.47943 14.8946 2.29189 14.7071C2.10436 14.5196 2 14.2652 2 14ZM3.999 21C3.46857 21 2.95986 20.7893 2.58479 20.4142C2.20971 20.0391 1.999 19.5304 1.999 19C1.999 18.4696 2.20971 17.9609 2.58479 17.5858C2.95986 17.2107 3.46857 17 3.999 17C4.52943 17 5.03814 17.2107 5.41321 17.5858C5.78829 17.9609 5.999 18.4696 5.999 19C5.999 19.5304 5.78829 20.0391 5.41321 20.4142C5.03814 20.7893 4.52943 21 3.999 21ZM15.999 21C15.4686 21 14.9599 20.7893 14.5848 20.4142C14.2097 20.0391 13.999 19.5304 13.999 19C13.999 18.4696 14.2097 17.9609 14.5848 17.5858C14.9599 17.2107 15.4686 17 15.999 17C16.5294 17 17.0381 17.2107 17.4132 17.5858C17.7883 17.9609 17.999 18.4696 17.999 19C17.999 19.5304 17.7883 20.0391 17.4132 20.4142C17.0381 20.7893 16.5294 21 15.999 21Z"
+                                    fill="black" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="input-group search-bar min-[1200px]:hidden relative px-3 bg-white border-b-[1px] border-gray-100"
+            role="search">
+            <div class="flex items-center">
+                <input required type="search" value="" placeholder="Search Your Type" class="
             pl-2 py-2 md:py-4 pr-5  w-full outline-none
             font-lato font-light text-sm md:text-md text-gray-700 tracking-[1.8px] capitalize
           ">
-          <svg class="w-5 h-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M15 15L19 19M1 9C1 11.1217 1.84285 13.1566 3.34315 14.6569C4.84344 16.1571 6.87827 17 9 17C11.1217 17 13.1566 16.1571 14.6569 14.6569C16.1571 13.1566 17 11.1217 17 9C17 6.87827 16.1571 4.84344 14.6569 3.34315C13.1566 1.84285 11.1217 1 9 1C6.87827 1 4.84344 1.84285 3.34315 3.34315C1.84285 4.84344 1 6.87827 1 9Z"
-              stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-     
-      </div>
-    </form>
-    <div class="bg-white w-full flex justify-between items-center max-[1200px]:absolute
-        max-[1200px]:left-[-100%] max-[1200px]:top-0  duration-300 max-[1024px]:min-h-screen h-full border-b border-t border-gray-200
+                <svg class="w-5 h-5" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15 15L19 19M1 9C1 11.1217 1.84285 13.1566 3.34315 14.6569C4.84344 16.1571 6.87827 17 9 17C11.1217 17 13.1566 16.1571 14.6569 14.6569C16.1571 13.1566 17 11.1217 17 9C17 6.87827 16.1571 4.84344 14.6569 3.34315C13.1566 1.84285 11.1217 1 9 1C6.87827 1 4.84344 1.84285 3.34315 3.34315C1.84285 4.84344 1 6.87827 1 9Z"
+                        stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+        </form>
+        <div class="bg-white w-full flex justify-between items-center max-[1200px]:absolute
+         max-[1200px]:top-0  duration-300 max-[1199px]:min-h-screen h-full border-b border-t border-gray-200
       " id="toggle-links">
-      <div class="max-w-[1366px] px-3 mx-auto w-full h-full max-[1200px]:pt-8 max-[1199px]:min-h-screen overflow-y-auto">
-        <div class="min-[1200px]:hidden relative" id="closeMenu">
-          <div class="absolute right-[0px] inline-block cursor-pointer">
-            <img width="100" height="100" src="//mirojewelers.com/cdn/shop/files/cross-icon.svg?v=14765393618369614310" alt="cross-icon"
-              class="object-contain w-5 sm:w-6">
-          </div>
+            <div
+                class="max-w-[1066px] px-3 mx-auto w-full h-full max-[1200px]:pt-8 max-[1199px]:min-h-screen overflow-y-auto">
+                <div class="min-[1200px]:hidden relative" id="closeMenu">
+                    <div class="absolute right-[0px] inline-block cursor-pointer">
+                        <img width="100" height="100"
+                            src="//mirojewelers.com/cdn/shop/files/cross-icon.svg?v=14765393618369614310"
+                            alt="cross-icon" class="object-contain w-5 sm:w-6">
+                    </div>
+                </div>
+                <ul class="min-[1200px]:grid grid-flow-col justify-center gap-x-20 pt-10 min-[1200px]:pt-0 ">
+                    <!-- Engagement Rings -->
+                    <li class=" group py-4 max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4 max-[1199px]:pr-2">
+                        <a href="#" class="group-hover:text-[#bb5d1f] transition text-sm">
+                            Engagement Rings
+                        </a>                   
+                    </li>
+                    <li class="group py-2 sm:py-4 cursor-pointer ">
+                        <div
+                            class="flex justify-between max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4 max-[1199px]:pr-2">
+                            <a href="">
+                                <span
+                                    class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black max-[1199px]:mt-1">Wedding
+                                    Bands
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="group py-2 sm:py-4 cursor-pointer ">
+                        <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
+                            <span
+                                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">Diamonds
+                            </span>
+                        </a>
+                    </li>
+                    <li class="group py-2 sm:py-4 cursor-pointer">
+                        <div
+                            class="flex justify-between max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4 max-[1199px]:pr-2">
+                            <a href="#">
+                                <span
+                                    class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black max-[1199px]:mt-1">Jewelry
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="group py-2 sm:py-4 cursor-pointer ">
+                        <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
+                            <span
+                                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">Custom
+                                Design
+                            </span>
+                        </a>
+                    </li>
+                    <li class="group py-2 sm:py-4 cursor-pointer ">
+                        <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
+                            <span
+                                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">About
+                            </span>
+                        </a>
+                    </li>
+                    <li class="group py-2 sm:py-4 cursor-pointer ">
+                        <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
+                            <span
+                                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">christmas
+                                gifts
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="min-[1200px]:grid grid-flow-col auto-cols-max justify-center gap-x-20 pt-10 min-[1200px]:pt-0 overflow-y-hidden">
-          <li class="group py-2 sm:py-4 cursor-pointer">
-            <div
-              class="flex justify-between max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4 max-[1199px]:pr-2">
-              <a href="">
-                <span
-                  class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black max-[1199px]:mt-1">Engagement Rings
-                </span>
-              </a>
-            </div>
-          </li>
-          <li class="group py-2 sm:py-4 cursor-pointer ">
-            <div
-              class="flex justify-between max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4 max-[1199px]:pr-2">
-              <a href="">
-                <span
-                  class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black max-[1199px]:mt-1">Wedding Bands
-                </span>
-              </a>
-            </div>
-          </li>
-          <li class="group py-2 sm:py-4 cursor-pointer ">
-            <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
-              <span
-                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">Diamonds
-              </span>
-            </a>
-          </li>          
-          <li class="group py-2 sm:py-4 cursor-pointer">
-            <div
-              class="flex justify-between max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4 max-[1199px]:pr-2">
-              <a href="#">
-                <span
-                  class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black max-[1199px]:mt-1">Jewelry
-                </span>
-              </a>
-            </div>
-          </li>        
-          <li class="group py-2 sm:py-4 cursor-pointer ">
-            <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
-              <span
-                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">Custom Design
-              </span>
-            </a>
-          </li>
-          <li class="group py-2 sm:py-4 cursor-pointer ">
-            <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
-              <span
-                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">About
-              </span>
-            </a>
-          </li>
-          <li class="group py-2 sm:py-4 cursor-pointer ">
-            <a href="#" class="max-[1199px]:border-b border-gray-400 block max-[1199px]:pb-4">
-              <span
-                class="group-hover:text-[#bb5d1f] duration-300 block font-inter text-sm md:text-md font-normal text-black capitalize max-[1199px]:mt-1">christmas gifts
-              </span>
-            </a>
-          </li>  
-        </ul>
-      </div>
-    </div> 
-  </nav>
+    </nav>
     <!--------- header-section ---------->
     <header>
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
             <div class="bg-center bg-no-repeat bg-hero-img lg:min-h-[70vh] flex items-center hero-img py-12 bg-full  ">
                 <div class="container mx-auto px-3">
                     <div class="row">
@@ -244,18 +260,17 @@
                                 us help you create a unforgettable piece that will be cherished for generations to come.
                             </p>
                             <button
-                                class="bg-black text-white uppercase font-lato text-xsm md:text-md font-normal rounded-md py-4 px-10 mt-8 hover:bg-transparent border-2 border-black duration-300 hover:text-black ">explore
+                                class="bg-black text-white uppercase font-lato text-xs md:text-sm tracking-[1.1px] font-normal rounded-md py-4 px-10 mt-8 hover:bg-transparent border-2 border-black duration-300 hover:text-black ">explore
                                 christmas gifts</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         <img src="https://mirojewelers.com/cdn/shop/files/mirofinalimage.webp?v=1734173948" alt="header-img"
-            class="h-[350px] max-sm:h-[200px] w-full block md:hidden">
+            class="h-[350px] max-sm:h-[200px] w-full block lg:hidden object-cover">
         <div style="background: radial-gradient(circle at left top, #ffffff , #f6f6f6)">
-            <div class="container mx-auto px-3 block md:hidden text-center py-8 sm:py-12">
+            <div class="container mx-auto px-3 block lg:hidden text-center py-8 sm:py-12">
                 <h1 class="font-lato text-lg md:text-2xl font-medium uppercase ">Designed With Passion</h1>
                 <p class="font-lato text-md md:text-lg leading-6 md:leading-8 font-normal pt-1">Experience the timeless
                     beauty of
@@ -557,7 +572,7 @@
                         FROM OUR FAMILY TO YOURS
                     </h2>
                     <p
-                        class="font-lato font-normal text-md md:text-lg pt-2 text-black  md:leading-10 xl:w-[810px] md:mt-8">
+                        class="font-lato font-normal text-md md:text-lg pt-2 text-black tracking-[1.2px]  md:leading-10 xl:w-[720px] md:mt-8">
                         Our Collections Are Chosen To Blend A Variety Of Timeless And Trendy Styles And Designs.
                         Consider A Blank Canvas Where You Can Add Your Personal Touch And Make It Truly Yours. Once You
                         Find A Style That Captures Your Heart, We Can Start The Process Of Personalizing The Piece And
@@ -566,7 +581,7 @@
                     </p>
                     <div class="mt-4 md:mt-8">
                         <a href="" class="
-                    font-lato text-xs md:text-md font-normal  px-6 md:px-10 py-2 md:py-4 bg-white uppercase hover:bg-transparent border-white inline-block border-2
+                    font-lato text-sm md:text-base font-normal  px-6 md:px-10 py-2 md:py-4 bg-white uppercase hover:bg-transparent border-white inline-block border-2
                     border-solid duration-300 rounded-md  pointer-event-none border-white hover:border-black
                   ">LET'S START THE PROCESS</a>
                     </div>
@@ -848,7 +863,7 @@
                     VERRAGIO COLLECTION
                 </h2>
                 <p
-                    class="text-sm md:text-base  mx-auto font-normal text-black leading-6 md:leading-9 tracking-[1.8px] capitalize md:text-center md:mt-8">
+                    class="text-sm md:text-md font-lato mx-auto font-normal text-black leading-6 md:leading-9 tracking-[1.4px] capitalize md:text-center md:mt-8">
                     VERRAGIO Is Known For Seamlessly Uniting Time-Honored Craftsmanship With Today's Cutting-Edge
                     Technology TO Offer
                     Distinctive Bridal Jewelry Collections Of Unique Engagement Rings And Wedding Bands. Each Exquisite
@@ -1069,101 +1084,122 @@
         </div>
     </section>
 
- <!-- footer links -->
-   <footer class="bg-black">
-    <div class="w-full px-4 pt-14 pb-8">
-      <!-- Footer Links -->
-      <div class="flex flex-col md:flex-row flex-wrap items-start justify-between pb-12 gap-y-6">
-        <div class="md:w-1/2 lg:w-2/6 space-y-4">
-          <div>
-            <a href="/">
-              <img
-                src="//mirojewelers.com/cdn/shop/files/logo-white.png?v=15969793249464033080"
-                alt="footer-logo"
-                class="md:w-[200px] max-w-[180px] hover:scale-[0.95] duration-300"
-                height="100"
-                width="100">
-            </a>
-          </div>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-3">
-              <img src="https://mirojewelers.com/cdn/shop/files/home.svg?v=1718778603" alt="home">           
-              <p class="text-white text-xs">6750 S. Emporia St. Centennial, Colorado 80112</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <img src="https://mirojewelers.com/cdn/shop/files/clock.svg?v=1718778601" alt="hours" class="mt-1">           
-              <p class="text-white text-xs">Regular Hours: Tue - Fri: 10 am-6 pm<br>Sat: 10 am-5 pm</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <img src="https://mirojewelers.com/cdn/shop/files/phone.svg?v=1718778602" alt="phone" class="w-5">           
-              <p class="text-white text-xs ">303-393-8881</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <img src="https://mirojewelers.com/cdn/shop/files/mail.svg?v=1718778595" alt="email" class="w-5 mt-1">           
-              <p class="text-white text-xs pt-1 uppercase">info@mirojewelers.com</p>
-            </li>
-          </ul>
+    <!-- footer links -->
+    <footer class="bg-black">
+        <div class="w-full px-4 pt-14 pb-8">
+            <!-- Footer Links -->
+            <div class="flex flex-col md:flex-row flex-wrap items-start justify-between pb-12 gap-y-6">
+                <div class="md:w-1/2 lg:w-2/6 space-y-4">
+                    <div>
+                        <a href="/">
+                            <img src="//mirojewelers.com/cdn/shop/files/logo-white.png?v=15969793249464033080"
+                                alt="footer-logo" class="md:w-[200px] max-w-[180px] hover:scale-[0.95] duration-300"
+                                height="100" width="100">
+                        </a>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <img src="https://mirojewelers.com/cdn/shop/files/home.svg?v=1718778603" alt="home">
+                            <p class="text-white text-xs">6750 S. Emporia St. Centennial, Colorado 80112</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="https://mirojewelers.com/cdn/shop/files/clock.svg?v=1718778601" alt="hours"
+                                class="mt-1">
+                            <p class="text-white text-xs">Regular Hours: Tue - Fri: 10 am-6 pm<br>Sat: 10 am-5 pm</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="https://mirojewelers.com/cdn/shop/files/phone.svg?v=1718778602" alt="phone"
+                                class="w-5">
+                            <p class="text-white text-xs ">303-393-8881</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="https://mirojewelers.com/cdn/shop/files/mail.svg?v=1718778595" alt="email"
+                                class="w-5 mt-1">
+                            <p class="text-white text-xs pt-1 uppercase">info@mirojewelers.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/2 lg:w-1/5 space-y-4 pt-2 md:pt-6">
+                    <div>
+                        <div class="text-white text-sm font-lato md:text-md">EXPERIENCE MIRO JEWELERS</div>
+                    </div>
+                    <ul class="mt-2 space-y-2 md:space-y-3 md:pt-5">
+                        <li><a href=""
+                                class="text-white font-lato text-xs  border-b border-transparent hover:border-white uppercase">Custom
+                                Design</a></li>
+                        <li><a href=""
+                                class="text-white font-lato text-xs  border-b border-transparent hover:border-white uppercase">Jewelry
+                                Repair</a></li>
+                        <li><a href=""
+                                class="text-white text-xs  font-lato border-b border-transparent hover:border-white uppercase">Current
+                                Promotions</a></li>
+                        <li><a href=""
+                                class="text-white text-xs  border-b font-lato border-transparent hover:border-white uppercase">Determine
+                                Your Ring Size</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/2 lg:w-1/5 space-y-4 pt-2 md:pt-6">
+                    <div>
+                        <div class="text-white text-sm font-lato md:text-md">WHY MIRO JEWELERS?</div>
+                    </div>
+                    <ul class="mt-2 space-y-2 md:space-y-3 md:pt-5">
+                        <li><a href="/pages/about"
+                                class="text-white text-xs border-b uppercase border-transparent hover:border-white">Who
+                                We Are</a></li>
+                        <li><a href="/pages/lifetime-warranty"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Lifetime
+                                Warranty</a></li>
+                        <li><a href="/pages/shipping-information"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Free
+                                Shipping</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/2 lg:w-1/5 space-y-4 pt-2 md:pt-6">
+                    <div>
+                        <div class="text-white text-sm font-lato md:text-md">ABOUT MIRO JEWELERS</div>
+                    </div>
+                    <ul class="mt-2 space-y-2 md:space-y-3 md:pt-5">
+                        <li><a href="/blogs/our-blogs"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Blogs</a>
+                        </li>
+                        <li><a href="/pages/contact"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Contact
+                                Us</a></li>
+                        <li><a href="/pages/terms-conditions"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Terms
+                                & Conditions</a></li>
+                        <li><a href="/pages/return-policy"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Return
+                                Policy</a></li>
+                        <li><a href="/pages/privacy-policy"
+                                class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Media Links -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between border-t pt-6 md:pt-12">
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/MiroJewelersOnline/" target="_blank">
+                        <img src="//mirojewelers.com/cdn/shop/files/fb.svg?v=7459899930103485825" alt="facebook-icon"
+                            class="w-6 h-6 hover:translate-y-[-4px] duration-200">
+                    </a>
+                    <a href="https://www.instagram.com/mirojewelers/?hl=en" target="_blank">
+                        <img src="//mirojewelers.com/cdn/shop/files/insta.svg?v=7115374218249489694" alt="insta-icon"
+                            class="w-6 h-6 hover:translate-y-[-4px] duration-200">
+                    </a>
+                </div>
+                <div class="text-white text-sm max-md:pt-4">
+                    &copy; 2024 <a href="/" class="border-b border-white hover:pb-1">MiroJewelers</a>. All Rights
+                    Reserved.
+                </div>
+            </div>
         </div>
-  
-        <div class="md:w-1/2 lg:w-1/5 space-y-4 pt-2 md:pt-6">
-          <div>
-            <div class="text-white text-sm font-lato md:text-md">EXPERIENCE MIRO JEWELERS</div>
-          </div>
-          <ul class="mt-2 space-y-2 md:space-y-3 md:pt-5">
-            <li><a href="" class="text-white font-lato text-xs  border-b border-transparent hover:border-white uppercase">Custom Design</a></li>
-            <li><a href="" class="text-white font-lato text-xs  border-b border-transparent hover:border-white uppercase">Jewelry Repair</a></li>
-            <li><a href="" class="text-white text-xs  font-lato border-b border-transparent hover:border-white uppercase">Current Promotions</a></li>
-            <li><a href="" class="text-white text-xs  border-b font-lato border-transparent hover:border-white uppercase">Determine Your Ring Size</a></li>
-          </ul>
-        </div>
-  
-        <div class="md:w-1/2 lg:w-1/5 space-y-4 pt-2 md:pt-6">
-          <div>
-            <div class="text-white text-sm font-lato md:text-md">WHY MIRO JEWELERS?</div>
-          </div>
-          <ul class="mt-2 space-y-2 md:space-y-3 md:pt-5">
-            <li><a href="/pages/about" class="text-white text-xs border-b uppercase border-transparent hover:border-white">Who We Are</a></li>
-            <li><a href="/pages/lifetime-warranty" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Lifetime Warranty</a></li>
-            <li><a href="/pages/shipping-information" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Free Shipping</a></li>
-          </ul>
-        </div>
-  
-        <div class="md:w-1/2 lg:w-1/5 space-y-4 pt-2 md:pt-6">
-          <div>
-            <div class="text-white text-sm font-lato md:text-md">ABOUT MIRO JEWELERS</div>
-          </div>
-          <ul class="mt-2 space-y-2 md:space-y-3 md:pt-5">
-            <li><a href="/blogs/our-blogs" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Blogs</a></li>
-            <li><a href="/pages/contact" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Contact Us</a></li>
-            <li><a href="/pages/terms-conditions" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Terms & Conditions</a></li>
-            <li><a href="/pages/return-policy" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Return Policy</a></li>
-            <li><a href="/pages/privacy-policy" class="text-white text-xs  uppercase border-b border-transparent hover:border-white">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <!-- Media Links -->
-      <div class="flex flex-col md:flex-row md:items-center justify-between border-t pt-6 md:pt-12">
-        <div class="flex items-center gap-4">
-          <a href="https://www.facebook.com/MiroJewelersOnline/" target="_blank">
-            <img
-              src="//mirojewelers.com/cdn/shop/files/fb.svg?v=7459899930103485825"
-              alt="facebook-icon"
-              class="w-6 h-6 hover:translate-y-[-4px] duration-200">
-          </a>
-          <a href="https://www.instagram.com/mirojewelers/?hl=en" target="_blank">
-            <img
-              src="//mirojewelers.com/cdn/shop/files/insta.svg?v=7115374218249489694"
-              alt="insta-icon"
-              class="w-6 h-6 hover:translate-y-[-4px] duration-200">
-          </a>
-        </div>
-        <div class="text-white text-sm max-md:pt-4">
-          &copy; 2024 <a href="/" class="border-b border-white hover:pb-1">MiroJewelers</a>. All Rights Reserved.
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <!-- Slick Slider Script -->
     <script>
@@ -1323,21 +1359,21 @@
             });
         });
     </script>
-      <!-- navbar Script -->
+    <!-- navbar Script -->
     <script>document.addEventListener("DOMContentLoaded", () => {
-        const openMenuButton = document.getElementById("openMenu");
-        const closeMenuButton = document.getElementById("closeMenu");
-        const menuLinks = document.getElementById("toggle-links");
-      
-        openMenuButton.addEventListener("click", () => {
-          menuLinks.style.left = "0"; 
+            const openMenuButton = document.getElementById("openMenu");
+            const closeMenuButton = document.getElementById("closeMenu");
+            const menuLinks = document.getElementById("toggle-links");
+
+            openMenuButton.addEventListener("click", () => {
+                menuLinks.style.left = "0";
+            });
+
+            closeMenuButton.addEventListener("click", () => {
+                menuLinks.style.left = "-100%";
+            });
         });
-      
-        closeMenuButton.addEventListener("click", () => {
-          menuLinks.style.left = "-100%"; 
-        });
-      });
-      </script>
+    </script>
 </body>
 
 </html>
